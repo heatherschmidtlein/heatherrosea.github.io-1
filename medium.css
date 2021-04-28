@@ -1,0 +1,28 @@
+@media only screen and (min-width: 32.5em) {
+
+header {
+    font-size: 1.2em;
+    border-radius: 5px;
+}
+
+main {
+    grid-template-columns: 1fr 1fr;
+}
+  
+
+section:nth-child(3) {
+grid-column: span 2;
+}
+
+
+footer {
+    font-size: 1em;
+    border-radius: 5px;
+}
+  
+  
+img {
+  float: right;
+}
+
+}
