@@ -63,6 +63,7 @@ main {
 nav {
   background-color: #FCF0DA;
   overflow: hidden;
+  padding: 2%;
 }
 
 nav a {
