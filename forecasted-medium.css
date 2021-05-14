@@ -1,10 +1,62 @@
 /* Tablet Views ******************************/
 @media only screen and (max-width: 37.5em) {
 
-  nav a { 
-    display: flex;
-    justify-content: center;
-    flex: 1 1 100%; 
-  }
+
+.navigation {
+    list-style: none;
+
+}
+
+.navigation li:first-child {
+    display: block;
+}
+
+.navigation li {
+    display: none;
+    margin-right: 9%;
+}
+  
+
+.navigation a {
+    display: block;
+    padding: 1%;
+    text-align: center;
+    text-decoration: none;
+    color: #4F6D7A;
     
+}
+
+.navigation a:active {
+    color: #4F6D7A;
+}
+  
+  
+  #catchphrase {
+    font-size: 1.3rem;
+    padding: 0;
+    
+}
+  
+.responsive li {
+	display: block;
+}
+  
+
+  
+}
+  
+/* Tablet Views ******************************/
+@media only screen and (min-width: 37.5em) {
+ .menu {
+  margin-right: 8%;
+   display: none !important;
+} 
+  
+    
+  nav a {
+    width: 50px;
+    font-size: 0.9rem;
+    margin-right: 20px;
+  }
+
 }
