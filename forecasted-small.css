@@ -6,6 +6,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap');
 
 
+
 body {
   background-color: #C0D6DF;
   font-family: 'Open Sans', sans-serif;
@@ -29,7 +30,7 @@ header {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 55%;
   margin-bottom: 0;
 }
 
@@ -46,10 +47,20 @@ h1 {
   padding: 0;
   font-size: 1.6rem;
   font-family: 'Pathway Gothic One', sans-serif;
+  
 }
 
-main {
+	main {
 		grid-template-columns: 1fr;
+	}
+
+nav ul {
+  list-style: none;
+
+}
+
+nav a:hover {
+    color: #EAA821;
 }
 
 .navigation a {
@@ -60,10 +71,10 @@ main {
     color: #4F6D7A;
 }
 
+
 nav {
   background-color: #FCF0DA;
-  overflow: hidden;
-  padding: 2%;
+   overflow: hidden;
 }
 
 nav a {
@@ -71,25 +82,16 @@ nav a {
   text-decoration: none;
   padding: 1%;
   font-size: 1.1rem;
-}
-
-nav ul {
-  list-style: none;
-}
-
-nav a:hover {
-    color: #EAA821;
-}
-
-.active {
-  font-weight: bold;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 li {
   display: inline-block;
   padding: 1%;
-}
 
+}
 h2 {
   font-size: 2.5em;
 }
@@ -117,12 +119,11 @@ p {
   margin-left: auto;
   margin-right: auto;
 }
-
 main {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 1.2em;
-    padding: 5%;
+    padding: 2.2em 1em 2.2em;
 }
 
 section {
@@ -130,6 +131,8 @@ section {
   width: 100%;
   border-radius: 10px; 
 }
+
+
 
 img {
   display: block;
@@ -151,9 +154,7 @@ footer {
   text-align: center;
   color: #4F6D7A;
   padding: 15px 5px 15px;
-  max-width: 90%;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 100%;
 }
 
 footer a {
@@ -164,4 +165,6 @@ footer a:hover {
     color: #C0D6DF;
 }
 
-
+.active {
+  font-weight: bold;
+}
