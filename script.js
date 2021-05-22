@@ -44,3 +44,17 @@ hambutton.addEventListener('click', () => {mainnav.classList.toggle('responsive'
 window.onresize = () => {if (window.innerWidth > 760) mainnav.classList.remove('responsive')};
 
 //
+
+
+
+// banner
+
+
+if (dayName == "Friday") {
+    document.getElementById("friday-banner").style.display = "block";
+}
+else {
+    document.getElementById("friday-banner").style.display = "none";
+}
+
+
