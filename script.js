@@ -58,3 +58,13 @@ else {
 }
 
 
+WebFont.load({
+    google: {
+      families: [
+         'Open Sans', 'Pathway Gothic One'
+      ]
+    }
+  });
+
+//
+
