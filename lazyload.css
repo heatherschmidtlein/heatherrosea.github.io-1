@@ -1,24 +1,20 @@
-
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100vh;
+  grid-gap: 0px 0px;
+}
 
 main {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  grid-column-start: 2;
+  grid-column-end: 3;
 }
 
-img {
-    min-width: 150px;
-    max-width: 300px;
-}
-
-img[data-src] {
-    filter: blur(3px);
-}
-
-img {
-    margin-top: 20px;
-    filter: blur(0px);
-    transition: filter 0.5s;
-}
-
+picture img[data-src] {
+    filter: blur(0.2em);
+  }
+  
+picture img {
+    filter: blur(0em);
+    transition: filter 0.75s;
+  }
