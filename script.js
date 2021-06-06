@@ -1,3 +1,4 @@
+// footer 
 
 const daynames = [
     "Sunday",
@@ -32,21 +33,6 @@ document.getElementById('date').textContent = todaydate;
 document.getElementById("year").innerHTML = d.getFullYear();
 
 
-//
-
-
-const hambutton = document.querySelector('.menu');
-const mainnav = document.querySelector('.navigation')
-
-hambutton.addEventListener('click', () => {mainnav.classList.toggle('responsive')}, false);
-
-
-window.onresize = () => {if (window.innerWidth > 760) mainnav.classList.remove('responsive')};
-
-//
-
-
-
 // banner
 
 
@@ -57,6 +43,17 @@ else {
     document.getElementById("friday-banner").style.display = "none";
 }
 
+// menu
+
+const hambutton = document.querySelector('.menu');
+const mainnav = document.querySelector('.navigation')
+
+hambutton.addEventListener('click', () => {mainnav.classList.toggle('responsive')}, false);
+
+
+window.onresize = () => {if (window.innerWidth > 760) mainnav.classList.remove('responsive')};
+
+// fonts
 
 WebFont.load({
     google: {
@@ -68,3 +65,18 @@ WebFont.load({
 
 //
 
+// windchill
+
+let t = parseFloat(document.getElementById('temperature').textContent);
+let s = parseFloat(document.getElementById('wind-speed').textContent);
+
+let wc = 35.74 + 0.6215 * t - 35.75 * Math.pow(s, 0.16) + 0.4275 * t * Math.pow(s, 0.16);
+
+if (t <= 50 && s > 3) {
+     wc = Math.round(wc);
+  } 
+else {
+     wc = "N/A";
+  }
+
+document.getElementById('wind-chill').innerHTML = wc;
